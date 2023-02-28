@@ -11,6 +11,7 @@ export const User = () => {
       name: "Chirag",
       email: "Chiragchapaneri500@gmail.com",
     });
+    userData?.setDesignation("Employee");
   };
   return (
     <div className="mx-auto max-w-screen-2xl items-center">
@@ -32,6 +33,9 @@ export const User = () => {
         </div>
         <h1 className="text-center">User Name is {userData?.user?.name}</h1>
         <h1 className="text-center">User Email is {userData?.user?.email}</h1>
+        <h1 className="text-center">
+          User Designation {userData?.designation}
+        </h1>
       </div>
     </div>
   );
